@@ -32,6 +32,7 @@ class AddTodoComponent extends React.Component {
 			      classes={{
 			      	root: 'addTodoContainer'
 			      }}
+				  alignItems="center"
 			>
 				<Grid item
 				      xs={8}
@@ -44,6 +45,8 @@ class AddTodoComponent extends React.Component {
 				</Grid>
 				<Grid item
 				      xs={4}
+					  container
+					  justify="flex-end"
 				>
 					<Button variant="contained"
 					        color="primary"

@@ -23,6 +23,7 @@ code {
   top: auto !important;
   text-align: center;
   padding: 20px;
+  height: 70px;
 }
 
 .cardStyle {
@@ -31,4 +32,18 @@ code {
 
 .addTodoContainer {
   margin-bottom: 30px;
+}
+
+.mainContainer {
+  margin-bottom: 85px;
+}
+
+.todo {
+  display: flex;
+  background: white;
+  border: 2px solid #3f51b5;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px 1px black;
 }

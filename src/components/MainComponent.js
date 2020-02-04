@@ -31,6 +31,9 @@ class MainComponent extends React.Component {
 		return (
 			<Grid container
 			      justify="center"
+				  classes={{
+					  container: 'mainContainer'
+				  }}
 			>
 				<Grid item
 				      xs={6}

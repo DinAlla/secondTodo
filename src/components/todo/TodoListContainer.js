@@ -14,7 +14,11 @@ function TodoListContainer(props) {
 				!!todoList.length
 				&& (
 					todoList.map(todo => (
-						<div key={todo.id}>{todo.title}</div>
+						<div key={todo.id}
+							 className="todo"
+						>
+							{todo.title}
+						</div>
 						// границы
 						// заливка
 						// тени
