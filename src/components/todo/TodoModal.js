@@ -1,6 +1,8 @@
 import React from 'react';
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
 
 class TodoModal extends React.Component {
 	constructor(props) {
@@ -34,6 +36,11 @@ class TodoModal extends React.Component {
 				<DialogTitle>
 					{this.state.title}
 				</DialogTitle>
+				<DialogContent>
+					{this.state.description}
+				</DialogContent>
+				<DialogActions>
+				</DialogActions>
 			</Dialog>
 		);
 	}
