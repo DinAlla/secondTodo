@@ -46,4 +46,16 @@ code {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 12px 1px black;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% auto;
+}
+
+.todo div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todoInput, .todoTitle {
+  width: 250px;
 }
