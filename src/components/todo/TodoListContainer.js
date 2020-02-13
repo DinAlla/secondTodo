@@ -2,6 +2,8 @@ import React from 'react';
 import back from '../../assets/back.jpg';
 import TodoComponent from "./TodoComponent";
 
+
+// ЗАДАЧА ЭТОГО КОМПОНЕНТА - ОТРИСОВАТЬ ВСЕ ТУДУШКИ
 function TodoListContainer(props) {
 	const {todoList, updateTodo, deleteTodoById, onOpenModal} = props; // array of todo's
 	return (
@@ -12,6 +14,7 @@ function TodoListContainer(props) {
 				 padding: '10px'
 			 }}
 		>
+			{/* ПРОЦЕСС ОТРИСОВКИ ВСЕХ ТУДУШЕК */}
 			{
 				!!todoList.length
 				&& (
@@ -22,12 +25,6 @@ function TodoListContainer(props) {
 						               deleteTodoById={deleteTodoById}
 						               onOpenModal={onOpenModal}
 						/>
-						// границы
-						// заливка
-						// тени
-						// паддинги (внутренние отступы)
-						// дисплей флекс
-						// марджины
 					))
 				)
 			}

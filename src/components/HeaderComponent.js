@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
 import avatar from '../assets/avatar.jpg';
 
+// ФУНКЦИОНАЛЬНЫЙ КОМПОНЕНТ ХИДЕРА
 function HeaderComponent() {
 	return (
 		<AppBar position="relative">
@@ -12,6 +13,7 @@ function HeaderComponent() {
 				<Grid item
 				      xs={6}
 				>
+					{/* СТИЛИЗУЕМ ДИВ ЛОКАЛЬНО */}
 					<div style={{
 						    width: '450px',
 							margin: '30px auto'
@@ -33,6 +35,7 @@ function HeaderComponent() {
 				      justify="center"
 				      alignItems="center"
 				>
+					{/* ИСПОЛЬЗУЕМ КОМПОНЕНТ АВАТАР ИЗ БИБЛОТЕКИ МАТЕРИАЛ ЮАЙ */}
 					<Avatar alt="Angelina"
 					        src={avatar}
 					        size="large"

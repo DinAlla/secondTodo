@@ -6,6 +6,8 @@ import Button from "@material-ui/core/Button";
 class AddTodoComponent extends React.Component {
 	constructor(props) {
 		super(props);
+
+		// ЗАДАЕМ СОСТОЯНИЕ ЛОКАЛЬНОЕ ДЛЯ ТУДУШКИ
 		this.state = {
 			inputValue: ''
 		};
@@ -13,12 +15,14 @@ class AddTodoComponent extends React.Component {
 		this.onSaveTitle = this.onSaveTitle.bind(this);
 	}
 
+	// ФУНКЦИЯ ДЛЯ ИЗМЕНЕНИЯ ЗАГОЛОВКА СОЗДАВАЕМОЙ ТУДУШКИ
 	onChangeTitle(event) {
 		this.setState({
 			inputValue: event.target.value
 		});
 	}
 
+	// ФУНКЦИЯ ДЛЯ СОХРАНЕНИЯ НОВОЙ ТУДУШКИ
 	onSaveTitle() {
 		this.props.addNewTodo(this.state.inputValue);
 		this.setState({
